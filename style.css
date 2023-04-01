@@ -1,3 +1,191 @@
-body {
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+.header {
+  padding: 1% 3%;
+  background-color: darkcyan;
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr 6fr repeat(2, 1fr) 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px 15px;
+}
+
+.header > button {
+  width: 100%;
+  height: 60%;
+  border: none;
+  border-radius: 2em;
+  background-color: darkblue;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.header > button,
+.header > img {
+  place-self: center;
+}
+
+.search-bar {
+  width: 90%;
+  height: 30%;
+  background-color: darkgrey;
+  border-radius: 2em;
+  align-self: center;
+}
+
+img[alt*="small"] {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.username {
+  font-size: 1.5rem;
+}
+
+img[alt*="medium"] {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+
+.username,
+.user-info {
+  align-self: center;
+}
+
+.user-info > p:first-of-type {
+  font-size: 1.2rem;
+}
+
+.user-info > p:nth-child(2) {
+  font-size: 2rem;
+}
+
+.sidebar {
+  background-color: darkgoldenrod;
+  grid-row: 1 / 3;
+}
+
+.links-container {
+  height: 70%;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
+
+ul {
+  font-size: 1.5rem;
+  padding-left: 15%;
+}
+
+.links-container > ul:first-of-type {
+  padding-top: 5%;
+  font-size: 2rem;
+}
+
+/*Brandin sections*/
+.links-container > ul:nth-child(2) {
+  display: grid;
+}
+
+li {
+  line-height: 1.1;
+}
+
+/*Communities*/
+.links-container > ul:nth-child(2) > li:nth-child(6) {
+  padding-bottom: 10%;
+}
+
+.main-content {
+  background-color: darkolivegreen;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 30px;
+  padding: 2%;
+}
+
+.main-content > div:first-of-type {
+  grid-row: 1 / 3;
+}
+
+/*Trending div*/
+.main-content > div:last-of-type {
+  grid-column: 2;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr repeat(3, 7fr);
+  gap: 20px;
+  padding-right: 3%;
+}
+
+.projects > h2 {
+  grid-column: 1 / 3;
+}
+
+.project-card {
+  background-color: darkslategrey;
+  font-size: 1.3rem;
+  padding: 3% 5%;
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr;
+}
+
+.icons {
+  justify-self: end;
+}
+
+.announcements {
+  display: grid;
+  grid-template-rows: 1fr 8fr;
+}
+
+.announcements-card {
+  background-color: aliceblue;
+  display: grid;
+  padding: 3% 6%;
+  row-gap: 5px;
+  align-content: space-between;
+}
+
+.announcement-description {
+  font-size: 0.9rem;
+}
+
+.bar-separator {
   background-color: gray;
+  min-height: 2px;
+}
+
+.trending {
+  display: grid;
+  grid-template-rows: 1fr 8fr;
+}
+
+.trending-card {
+  background-color: aliceblue;
+  display: grid;
+  place-items: center start;
+  padding: 3% 6%;
+}
+
+.user {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 10px;
 }
