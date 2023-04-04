@@ -4,25 +4,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin dashboard</title>
+  <title>Dashboard</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fauna+One&display=swap"
+        rel="stylesheet">
+  <link rel="icon" href="icons/sidebar/seed.svg">
 </head>
 <body>
   <div class="container">
     <div class="header">
-      <button>Search button</button>
-      <div class="search-bar"></div>
-      <button>notifications</button>
+      <img src="icons/header/magnify.svg" alt="Search icon">
+      <form action="">
+        <input type="search" name="search" id="search" class="search-bar">
+      </form>
+      <img src="icons/header/bell-outline.svg" alt="Bell icon">
       <img src="https://source.unsplash.com/random/200x200"
            alt="small-profile-icon">
       <div class="username">
-        <b>user-name</b>
+        <b>Grievous</b>
       </div>
       <img src="https://source.unsplash.com/random/200x200"
            alt="medium-profile-icon">
       <div class="user-info">
-        <p>Hi there,</p> 
-        <p><b>user-name (@user-name)</b></p>
+        <p>Hello there,</p> 
+        <p><b>General Grievous (@Grievous)</b></p>
       </div>
       <button><b>new</b></button>
       <button><b>upload</b></button>
@@ -50,46 +57,88 @@
       <div class="projects">
         <h2>Your projects</h2>
         <div class="project-card">
-          <b>project-1</b>
+          <p><b>Web chess</b></p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil assumenda earum nam provident explicabo!</p>
-          <div class="icons">Icons</div>
+          <div class="icons">
+            <img src="icons/project-card/heart-plus.svg"
+                 alt="Heart with plus icon">
+            <img src="icons/project-card/eye-check-outline.svg"
+                 alt="Eye with check icon">
+            <img src="icons/project-card/share-variant-outline.svg"
+                 alt="Share icon">
+          </div>
         </div>
         <div class="project-card">
-          <b>project-2</b>
+          <p><b>Calculator</b></p>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque fugit blanditiis sit facere facilis magni!</p>
-          <div class="icons">Icons</div>
+          <div class="icons">
+            <img src="icons/project-card/heart-plus.svg"
+                 alt="Heart with plus icon">
+            <img src="icons/project-card/eye-check-outline.svg"
+                 alt="Eye with check icon">
+            <img src="icons/project-card/share-variant-outline.svg"
+                 alt="Share icon">
+          </div>
         </div>
         <div class="project-card">
-          <b>project-3</b>
+          <p><b>Reddit like site</b></p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dicta deserunt reiciendis. Vel, magni quibusdam?</p>
-          <div class="icons">Icons</div>
+          <div class="icons">
+            <img src="icons/project-card/heart-plus.svg"
+                 alt="Heart with plus icon">
+            <img src="icons/project-card/eye-check-outline.svg"
+                 alt="Eye with check icon">
+            <img src="icons/project-card/share-variant-outline.svg"
+                 alt="Share icon">
+          </div>
         </div>
         <div class="project-card">
-          <b>project-4</b>
+          <p><b>New programming language</b></p>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex aut tempore dolores temporibus quis culpa?</p>
-          <div class="icons">Icons</div>
+          <div class="icons">
+            <img src="icons/project-card/heart-plus.svg"
+                 alt="Heart with plus icon">
+            <img src="icons/project-card/eye-check-outline.svg"
+                 alt="Eye with check icon">
+            <img src="icons/project-card/share-variant-outline.svg"
+                 alt="Share icon">
+          </div>
         </div>
         <div class="project-card">
-          <b>project-5</b>
+          <p><b>Random palette picker</b></p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores natus velit ea ipsum consequuntur.</p>
-          <div class="icons">Icons</div>
+          <div class="icons">
+            <img src="icons/project-card/heart-plus.svg"
+                 alt="Heart with plus icon">
+            <img src="icons/project-card/eye-check-outline.svg"
+                 alt="Eye with check icon">
+            <img src="icons/project-card/share-variant-outline.svg"
+                 alt="Share icon">
+          </div>
         </div>
         <div class="project-card">
-          <b>project-6</b>
+          <p><b>Goodreads like webapp</b></p>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto modi id, provident sequi voluptate autem!</p>
-          <div class="icons">Icons</div>
+          <div class="icons">
+            <img src="icons/project-card/heart-plus.svg"
+                 alt="Heart with plus icon">
+            <img src="icons/project-card/eye-check-outline.svg"
+                 alt="Eye with check icon">
+            <img src="icons/project-card/share-variant-outline.svg"
+                 alt="Share icon">
+          </div>
         </div>
       </div>
       <div class="announcements">
         <h2>Announcements</h2>
         <div class="announcements-card">
-          <p><b>Announcement-1</b></p>
+          <p><b>Site maintenance</b></p>
           <p class="announcement-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos laudantium nam culpa.</p>
           <div class="bar-separator"></div>
-          <p><b>Announcement-2</b></p>
+          <p><b>Book reading club</b></p>
           <p class="announcement-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur temporibus aut sapiente recusandae!</p>
           <div class="bar-separator"></div>
-          <p><b>Announcement-3</b></p>
+          <p><b>New update</b></p>
           <p class="announcement-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed eum rerum eius impedit?</p>
         </div>
       </div>
